@@ -1,0 +1,115 @@
+body {
+    font: 18px/28px;
+    background-color: #eaeaea;
+    background-image: url(img/patterns.png);
+    color: #333;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+
+.hero {
+    height: 150px;
+    background-image: url(img/meow.png);
+    background-size: cover;
+    background-position: 0 -160px;
+    border-bottom: 5px solid sandybrown;
+    border-top: 5px solid sandybrown;
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 1px;
+    margin-top: -15px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: sandybrown;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: bisque;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    font-size: 17px;
+    margin-top: -25px;
+}
+
+.content h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.content .penulis a {
+    color: sandybrown;
+    text-decoration: none;
+}
+
+.content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+.content .social a {
+    text-decoration: none;
+    color: sandybrown;
+}
+
+.content .social a:hover {
+    background-color: bisque;
+    color: white;
+}
+
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content .sl {width: 120px;}
+
+.content .gpo {width: 120px;}
+
+.content .cf {width: 120px;}
+
+.content .pp {width: 120px;}
+
+.content .cr {width: 120px;}
+
+.content .ang {width: 120px;}
+
+.content .gl {width: 150px;}
+
+.content .apic {width: 150px;}
+
+.content .stulo {width: 150px;}
+
+.footer {
+    background-color: sandybrown;
+    padding: 10px;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 18px;
+}
