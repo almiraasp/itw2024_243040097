@@ -97,7 +97,7 @@ h1 {
 }
 
 .overlay:target img {
-    animation: zoomDanFade 1s;
+    animation: fadeAjah 1s;
 }
 
 .overlay .close {
@@ -118,8 +118,40 @@ h1 {
     animation: slideDownFade .5s .5s forwards;
 }
 
+.overlay:target .next,
+.overlay:target .prev {
+    animation: fadeAjah .5s .5s forwards;
+}
+
+
+/* navigasi */
+.next, .prev {
+    width: 120px;
+    height: 120px;
+    background-image: url(../img/next.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/prev.png);
+    margin-left: -165px;
+}
 
 /* animasi */
+@keyframes fadeAjah {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes zoomDanFade {
     0% {
         transform: scale(0);
