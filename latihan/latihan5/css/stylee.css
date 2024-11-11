@@ -1,0 +1,229 @@
+/* font */
+@font-face {
+    font-family: 'exo';
+    src: url(../font/Exo-Regular.otf) format('woff');
+}
+
+/* style utama */
+body {
+    font: 18px/36px 'exo', 'arial narrow', arial, sans-serif;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-x;
+}
+
+.container {
+    width: 1000px;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-x;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+
+.container h1 {
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+}
+
+.container .content span,
+.container .konten .hider {
+    background-color: greenyellow;
+}
+
+.container .gallery li {
+    width: 120px;
+    height: 120px;
+    /*overflow: hidden;*/
+    border: 3px solid #666;
+    float: left;
+    margin-right: 17px;
+    position: relative;
+}
+
+.container .gallery {
+    padding-top: 15px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid black;
+}
+
+.container .gallery li span {
+    display: block;
+    text-align: center;
+}
+
+.container .clear {
+    clear: both;
+}
+
+.container h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.container .konten {
+    padding-top: 10px;
+}
+
+.container .konten h3 {
+    font-size: 21px;
+}
+
+.container .galeri {
+    padding-top: 15px;
+}
+
+/* album */
+.galeri li {
+    width: 150px;
+    height: 150px;
+    /*overflow: hidden;*/
+    border: 2px solid #666;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15PX;
+    position: relative;
+}
+
+.galeri li span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(200,200,200,.5);
+    position:absolute;
+    top: 0;
+    text-align: center;
+    line-height: 150px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transition: .3s;
+}
+
+.galeri li a:hover span {
+    opacity: 1;
+}
+
+.konten h4 {
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img {
+    animation: fadeAjah 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -30px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 5px; 
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+    animation: fadeAjah .5s .5s forwards;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* navigasi */
+.next, .prev {
+    width: 120px;
+    height: 120px;
+    background-image: url(../img/next.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/prev.png);
+    margin-left: -165px;
+}
+
+
+/* animasi */
+@keyframes fadeAjah {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0%  {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
