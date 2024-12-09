@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bebas</title>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" 
+        rel="stylesheet"
+        />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">OPTIK  MIROGRIL</h2>
+                <p class="sub-heading">kacamata kekinian</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 250K</h4>
+                <P class="item">Kacamata Gaya</P>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 200K</h4>
+                <p class="item">Kacamata Minus</p>
+            </div>
+        </header>
+
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>OPTIK MIROGRIL</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">👀</div>
+                <h3>Pemeriksaan</h3>
+                <p>Untuk mengetahui gangguan refraksi mata,
+                    seperti miopia (rabun jauh), hipermetropia (rabun dekat),
+                    dan astigmatisme (mata silinder).
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">👓</div>
+                <h3>Pemilihan Bingkai</h3>
+                <p>Membantu pelanggan untuk memilih bingkai kacamata
+                    yang sesuai dengan bentuk wajah, kebutuhan,
+                    dan preferensi gaya.
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">🔧</div>
+                <h3>Perawatan dan Perbaikan</h3>
+                <p>Melakukan perawatan dan perbaikan
+                    kacamata, termasuk mengganti lensa
+                    atau bingkai yang rusak.
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">🎟️</div>
+                <h3>Diskon</h3>
+                <p>Memberikan diskon untuk pembelian 
+                    minimal 300k kepada member 
+                    Optik Mirogril.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="img/kucg1.jpg" alt="">
+            <img src="img/kucg2.jpg" alt="">
+            <img src="img/kucg7.jpg" alt="">
+            <img src="img/kucm1.jpg" alt="">
+            <img src="img/kucg4.jpg" alt="">
+            <img src="img/kucm3.jpg" alt="">
+            <img src="img/kucm2.jpg" alt="">
+            <img src="img/kucg5.jpg" alt="">
+            <img src="img/kucg6.jpg" alt="">
+            <img src="img/kucg3.jpg" alt="">
+        </section>
+
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('slide');
+        });
+    </script>
+    
+</body>
+</html>
